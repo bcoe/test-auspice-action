@@ -7,4 +7,4 @@
 /zika?c=region&l=clock&legend=open&m=div&r=region, Zika virus evolution, rectangular
 
 # any page that doesn't exist will do:
-/page-does-not-exist, an error has occured
+/page-does-not-exist, an error has occured, bleep blorp
