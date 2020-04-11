@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+name: smoke-test
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [10]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        uses: actions/npm@master
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+        with:
+          args: install
+      - name: Smoke Tests
+        uses: mujo-code/puppeteer-headful@master
+        env:
+          CI: 'true'
+      - run: npm run get-data
+      - run: npm run get-narratives
+      - run: npm run coverage
