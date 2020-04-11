@@ -15,12 +15,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-      - uses: mujo-code/puppeteer-headful@master
-        env:
-          CI: 'true'
       - run: npm install
-        env:
-          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
       - run: npm run get-data
       - run: npm run get-narratives
       - run: npm run smoke-test:ci
