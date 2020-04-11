@@ -12,7 +12,7 @@ jobs:
         node: [10]
     steps:
       - uses: actions/checkout@v2
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
       - uses: mujo-code/puppeteer-headful@master
