@@ -33,6 +33,7 @@
     "test": "jest test/*.js",
     "integration-test": "NODE_ENV=test ENV=dev jest --config puppeteer.config.js",
     "smoke-test": "NODE_ENV=test ENV=dev jest ./smoke-test/urls.test.js --config puppeteer.config.js",
+    "smoke-test:ci": "start-server-and-test server http://localhost:4000 smoke-test",
     "diff-lang": "./scripts/diff-lang.js"
   },
   "dependencies": {
@@ -136,6 +137,7 @@
     "jest": "^25.1.0",
     "jest-puppeteer": "^4.4.0",
     "puppeteer": "^2.1.1",
+    "start-server-and-test": "^1.10.11",
     "webpack-bundle-analyzer": "^3.3.2"
   }
 }

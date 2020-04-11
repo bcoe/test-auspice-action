@@ -23,4 +23,4 @@ jobs:
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
       - run: npm run get-data
       - run: npm run get-narratives
-      - run: npm run start && npm run smoke-test
+      - run: npm run smoke-test:ci
