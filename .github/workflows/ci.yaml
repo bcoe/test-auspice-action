@@ -32,7 +32,6 @@ jobs:
         env:
           SCREENSHOT_UPLOAD_URL: https://us-central1-oss-automation.cloudfunctions.net/github-image-commenter
           ACTION_LOG_FILE: "npm run integration-testci"
-          IMAGE_DIFF_INSTALLATION: 8118402
   lint:
     runs-on: ubuntu-latest
     steps:
