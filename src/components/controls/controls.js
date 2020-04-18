@@ -33,11 +33,8 @@ function Controls({mapOn}) {
       <ColorBy/>
 
 
-      <SidebarHeader>{t("sidebar:Tree Options")}</SidebarHeader>
       <ChooseLayout/>
       <ChooseMetric/>
-      <ChooseBranchLabelling/>
-      <SearchStrains/>
       <ChooseSecondTree/>
       <ToggleTangle/>
 
@@ -52,7 +49,6 @@ function Controls({mapOn}) {
       <span style={{paddingTop: "10px"}}/>
       <SidebarHeader>{t("sidebar:Panel Options")}</SidebarHeader>
       <PanelLayout/>
-      <PanelToggles/>
       <Language/>
     </ControlsContainer>
   );

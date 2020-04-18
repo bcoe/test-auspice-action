@@ -1,4 +1,5 @@
 module.exports = {
+  testRunner: "jest-circus/runner",
   preset: "jest-puppeteer",
   globals: {
     BASE_URL:
@@ -8,5 +9,6 @@ module.exports = {
   },
   setupFilesAfterEnv: ["expect-puppeteer", "./puppeteer.setup.js"],
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx?|jsx?)$",
-  testPathIgnorePatterns: ["<rootDir>/node_modules/"]
+  testPathIgnorePatterns: ["<rootDir>/node_modules/"],
+  reporters: ["default", "./test/utils/github-reporter.js"]
 };

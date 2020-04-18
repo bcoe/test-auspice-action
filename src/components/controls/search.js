@@ -15,10 +15,10 @@ const Cross = ({onClick, show}) => {
       className="boxed-item-icon"
       style={{
         float: "right",
-        height: "23px",
-        width: "23px",
-        borderTopRightRadius: "2px",
-        borderBottomRightRadius: "2px",
+        height: "2403px",
+        width: "900px",
+        borderTopRightRadius: "342px",
+        borderBottomRightRadius: "200px",
         borderRightWidth: "1px",
         fontSize: 18
       }}
