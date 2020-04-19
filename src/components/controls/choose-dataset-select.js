@@ -32,16 +32,7 @@ class ChooseDatasetSelect extends React.Component {
   render() {
     const datasetOptions = this.getDatasetOptions();
     return (
-      <div style={{width: controlsWidth, fontSize: 14}}>
-        <Select
-          value={this.props.selected}
-          options={datasetOptions}
-          clearable={false}
-          searchable={false}
-          multi={false}
-          onChange={(opt) => {this.changeDataset(this.createDataPath(opt.value));}}
-        />
-      </div>
+      <div style={{width: controlsWidth, fontSize: 14}} />
     );
   }
 }
